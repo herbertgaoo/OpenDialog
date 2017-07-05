@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/dialog.css" />
+<script src="script/jquery.min.js"></script>
+<script src="script/opendialog.js"></script>
+</head>
+<body>
+		<button id="btn" value="dialog" >dialog</button>
+</body>
+<script>
+	$(function() {
+		$("#btn").on("click", function (){
+					$dialog({
+						id: 'dialog'+Math.round(Math.random()*100),
+						title: '测试窗口',
+						width: 800,   
+						height: 500,
+						modal: false,
+						href: ''
+					});
+		})
+	});
+</script>
+</html>
