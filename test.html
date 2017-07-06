@@ -9,9 +9,23 @@
 </head>
 <body>
 		<button id="btn" value="dialog" >dialog</button>
+		<button id="btn_img" value="dialog" >img dialog</button>
 </body>
 <script>
 	$(function() {
+		$("#btn_img").on("click", function (){
+					$dialog({
+						id: 'dialog'+Math.round(Math.random()*100),
+						title: '图片窗口',
+						width: 800,   
+						height: 500,
+						modal: false,
+						href: '',
+						content:'<img src="img/test_pic.jpg" style="width: 100%;">',
+						type: "img"
+					});
+		})
+		
 		$("#btn").on("click", function (){
 					$dialog({
 						id: 'dialog'+Math.round(Math.random()*100),
