@@ -22,18 +22,23 @@
 }
 
 .closeBtn {
-    position: absolute;
-    right: 10px;
+	position: relative;
+    float: right;
     font-size: 1.2em;
     cursor: pointer;
-    font-family: cursive;
+    min-width: 30px;
+    min-height: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 30px;
 }
 
 .opendialog_header .title {
-	position: absolute;
-	left: 10px;
-	margin-top: 2px;
+    position: relative;
+    left: 10px;
+    margin-top: 2px;
     cursor: default;
+    float: left;
 }
 
 .modal_bg {
